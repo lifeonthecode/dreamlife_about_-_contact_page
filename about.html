@@ -13,10 +13,31 @@
 </head>
 <body>
 
+    
+
     <!-- header section  -->
     <header class="header_section">
-        <div class="desktop_main_menu">
-            <ul class="d-flex align-items-center">
+        <div>
+            <div class="desktop_main_menu d-none d-lg-block mx-auto">
+                <ul class="d-flex align-items-center">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Beats With Hooks</a></li>
+                    <li><a href="#">Licensing Information</a></li>
+                    <li><a href="#">About Me</a></li>
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+
+
+
+        <!-- bar icon  -->
+        <button class="bar_icon d-block d-lg-none"><i class="fa-solid fa-bars"></i></button>
+
+        <!-- mobile menu  -->
+        <div class="mobile_main_menu d-block d-lg-none" id="mobile_menu">
+            <ul class="mobile_menu_list_items">
                 <li><a href="#">Home</a></li>
                 <li><a href="#">Beats With Hooks</a></li>
                 <li><a href="#">Licensing Information</a></li>
@@ -30,7 +51,7 @@
 
     
     <!-- about all  sections  -->
-    <section class="about_all_section">
+    <section class="about_all_section ">
         <!-- about me section  -->
         <section class="about_me_section">
             <div class="about_wrapper">
@@ -46,7 +67,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="about_wrapper_text ml-24">
+                <div class="about_wrapper_text ml-24 my-75">
                     <h3 class="header_title">ABOUT ME</h3>
                     <p class="header_subTitle mb-3">My name is Jan, AKA Dreamlife and I’m a Hip Hop Producer from Bournemouth, England. I’ve been making beats since I was a kid. It all started for me when I downloaded a cracked version of Fruity Loops to a school computer and I’ve been hooked ever since.</p>
                     <p class="header_subTitle mb-3">Around 10 years ago I created my beat brand, since then I’ve been blessed to work with thousands of independent artists and a few of my favourite majors such as Logic, Currensy Joey Badass and Wiz Khalifa. Ive had music featured in several television shows including Power, The Chi, Swagger and Our Kind Of People.</p>
@@ -62,7 +83,7 @@
         <section class="about_me_section">
             <div class="about_wrapper">
                 
-                <div class="d-flex justify-content-end mr-24">
+                <div class="d-flex justify-content-start justify-content-md-end ml-24 mr-24 mb-75 px-15">
                     <div class="about_wrapper_text">
                         <h3 class="header_title">MY JOURNEY</h3>
                         <p class="header_subTitle mb-3">In 2014, I was working a full-time sales job, I’d recently moved to Panama in Central America to learn Spanish and I was struggling to make ends meet. My job paid a basic salary of around $300 a month and the rest was based on sales commission, and I wasn’t selling much.</p>
@@ -76,7 +97,7 @@
                     </div>
                 </div>
 
-                <div class="about_wrapper_img about_journey_wrapper">
+                <div class="about_wrapper_img about_journey_wrapper d-none d-md-block">
                     <img src="assets/about/A3C.jpeg" alt="" srcset="">
                 </div>
             </div>
@@ -88,11 +109,15 @@
             <div class="about_wrapper">
                 <div class="about_wrapper_img simple_wrapper_img">
                     <img src="assets/about/Studio-Photo-2.jpeg" alt="" srcset="">
-                    <div class="simple_inner_wrapper">
-                        <img src="assets/about/sample.png" style="width: 350px;height: 100px;">
+
+                    
+                    <div class="simple_inner_content">
+                        <div class="simple_inner_img">
+                        </div>
+                        <p>Soulful chords, live instrumentation and vintage synths.</p>
                     </div>
                 </div>
-                <div class="about_wrapper_text simple_wrapper_text ml-24">
+                <div class="about_wrapper_text simple_wrapper_text ml-24 mt-75 px-15">
                     <h3 class="header_title">THE SAMPLE LAB</h3>
                     <p class="header_subTitle mb-3">In 2017 I founded The Sample Lab, I have always been a record digger and most of my beats back in the day were sample-based.</p>
 
@@ -117,6 +142,8 @@
 
 
 
+
+
     <!-- discography section  -->
     <section class="discography_section py-75">
         <div class="discography_header text-center">
@@ -132,7 +159,7 @@
                             <h3 class="header_title">Joey Badass</h3>
                             <h4>Eulogy</h4>
                         </div>
-                        <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/TiC1rlm72og?si=uAeotRpBXODn2wvQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>  
+                        <iframe width="100%" height="315" src="https://www.youtube-nocookie.com/embed/TiC1rlm72og?si=uAeotRpBXODn2wvQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>  
 
                     </div>
                 </div>
@@ -142,7 +169,7 @@
                             <h3 class="header_title">Summer Walker</h3>
                             <h4>Toxic</h4>
                         </div>
-                        <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/bhdDznpJRkw?si=fA020ClvIrHq1eMe" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        <iframe width="100%" height="315" src="https://www.youtube-nocookie.com/embed/bhdDznpJRkw?si=fA020ClvIrHq1eMe" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                     </div>
                 </div>
                 <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-6">
@@ -151,7 +178,7 @@
                             <h3 class="header_title">Kevin Gates</h3>
                             <h4>Islah</h4>
                         </div>
-                        <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/TiC1rlm72og?si=uAeotRpBXODn2wvQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>  
+                        <iframe width="100%" height="315" src="https://www.youtube-nocookie.com/embed/TiC1rlm72og?si=uAeotRpBXODn2wvQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>  
                     </div>
                 </div>
                 <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-6">
@@ -160,7 +187,7 @@
                             <h3 class="header_title">Logic</h3>
                             <h4>Lost In Translation</h4>
                         </div>
-                        <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/bhdDznpJRkw?si=fA020ClvIrHq1eMe" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        <iframe width="100%" height="315" src="https://www.youtube-nocookie.com/embed/bhdDznpJRkw?si=fA020ClvIrHq1eMe" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                     </div>
                 </div>
                 <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-6">
@@ -169,7 +196,7 @@
                             <h3 class="header_title">Russ</h3>
                             <h4>Coulda Left Me Alone</h4>
                         </div>
-                        <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/TiC1rlm72og?si=uAeotRpBXODn2wvQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>  
+                        <iframe width="100%" height="315" src="https://www.youtube-nocookie.com/embed/TiC1rlm72og?si=uAeotRpBXODn2wvQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>  
                     </div>
                 </div>
                 <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-6">
@@ -178,13 +205,37 @@
                             <h3 class="header_title">Wiz Khalifa</h3>
                             <h4>Taylor Life</h4>
                         </div>
-                        <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/bhdDznpJRkw?si=fA020ClvIrHq1eMe" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        <iframe width="100%" height="315" src="https://www.youtube-nocookie.com/embed/bhdDznpJRkw?si=fA020ClvIrHq1eMe" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                     </div>
                 </div>
             </div>
         </div>
     </section>
+
+
+    <!-- footer section  -->
+    <footer class="footer_section" >
+        <div class="container">
+            <div class="footer_content">
+                <div class="footer_logo">
+                    <a href="#"><img src="assets/logo/Dreamlife-Logo-White.png" alt=""></a>
+                </div>
+
+                <div class="footer_social_icons">
+                    <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                </div>
+
+                <div class="footer_bottom">
+                    <p>© 2021 DreamLifeBeats.com | Created By <span>ElvisSalic.com</span></p>
+                </div>
+            </div>
+        </div>
+    </footer>
     
 </body>
 <script src="js/bootstrap.bundle.min.js"></script>
+<script src="js/main.js"></script>
 </html>
