@@ -1,0 +1,367 @@
+/* google font poppins and roboto */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+body {
+    font-family: "Poppins", sans-serif;
+}
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+}
+
+a {
+    text-decoration: none;
+}
+p {
+    margin: 0;
+    padding: 0;
+}
+img {
+    width: 100%;
+}
+ul{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+button {
+    background-color: transparent;
+    border: transparent;
+}
+
+
+:root {
+    /* font typography */
+    --fs-16: 1rem;
+    --fs-32: 2rem;
+    --fs-20: 1.2rem;
+    --fs-24: 1.5rem;
+    --fs-14: .9rem;
+    --fs-17: 1.1rem;
+    --fs-55: 3.5rem;
+    --fs-28: 1.7rem;
+    --fs-18: 1.1rem;
+    --fs-40: 2.5rem;
+    --fs-44: 2.8rem;
+
+    /* color typography  */
+    --primary_color: #00bef2;
+    --color_b: #000;
+    --color-w: #fff;
+    --bg-black: #000;
+    --bg: #F5F5F5;
+
+    /* font weight typography  */
+    --fw-300: 300;
+    --fw-400: 400;
+    --fw-500: 500;
+    --fw-600: 600;
+    --fw-700: 700;
+    --fw-800: 800;
+    --fw-900: 900;
+
+    /* transition typography  */
+    --ts-3s: all .3s ease;
+
+
+    --letter-sp-24: 1.5rem
+
+    /* font family  */
+    --font-roboto: "Roboto", sans-serif;
+
+    /* text transform  */
+    --text-ts-uppercase: uppercase;
+    --text-ts-lowercase: lowercase;
+    --text-ts-capitalize: capitalize;
+}
+/*****************************common css start **************************/
+.py-75 {
+    padding: 4.7rem 0rem;
+}
+
+.pb-75 {
+    padding-bottom: 4.7rem;
+}
+.pb-35 {
+    padding-bottom: 2.2rem;
+}
+
+.pt-25 {
+    padding-top: 1.6rem;
+}
+.pb-5 {
+    padding-top: .3.2rem;
+}
+
+.mb-20 {
+    margin-bottom: 1.2rem;
+}
+
+.mb-55 {
+    margin-bottom: 3.5rem;
+}
+
+.max-w-1040 {
+    max-width: 1040px;
+    margin-inline: auto;
+}
+
+.ml-24 {
+    padding-left: 1.5rem;
+}
+.mr-24 {
+    padding-right: 1.5rem;
+}
+
+.container {
+    max-width: 1140px !important;
+}
+
+.primary_btn {
+    font-size: var(--fs-20);
+    font-weight: var(--fw-600);
+    color: var(--color-w);
+    display: block;
+    padding: 13px 25px;
+    background-color: var(--primary_color);
+    cursor: pointer;
+    border: transparent;
+    border-radius: 50px;
+    transition: all .3s ease;
+}
+
+.primary_btn:hover {
+    background-color: var(--color_b);
+}
+
+.transparent_btn {
+    font-size: var(--fs-20);
+    font-weight: var(--fw-600);
+    color: var(--color-w);
+    display: block;
+    padding: 10px 20px;
+    background-color: transparent;
+    cursor: pointer;
+    border: 2px solid var(--primary_color);
+    border-radius: 50px;
+    transition: all .3s ease;
+}
+
+.header_title {
+    font-size: var(--fs-32);
+    font-weight: var(--fw-600);
+    color: var(--color_b);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.header_subTitle {
+    font-size: var(--fs-14);
+    font-weight: var(--fw-400);
+    color: var(--color_b);
+}
+
+/*****************************common css end **************************/
+
+
+
+/* header section  */
+.header_section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 60px 0px 55px 0px;
+    /* position: absolute;
+    top: 0;
+    left: 0; */
+}
+
+
+.desktop_main_menu ul {
+    gap: 20px;
+}
+
+
+.desktop_main_menu ul li a {
+    font-size: var(--fs-20);
+    font-weight: var(--fw-600);
+    color: var(--color_b);
+    transition: var(--ts-3s);
+}
+
+.desktop_main_menu ul li a:hover {
+    color: var(--primary_color);
+}
+
+
+
+/*********************about all section************************/
+.about_wrapper {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+}
+.about_wrapper_img {
+    /* max-height: 687px;
+    max-width: 931px; */
+    width: 100%;
+    position: relative;
+}
+.about_wrapper_img::before {
+    position: absolute;
+    content: "";
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    background: #000;
+    opacity: .5;
+}
+
+.about_inner_wrapper {
+    position: absolute;
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 10;
+}
+
+.about_inner_wrapper img {
+    max-width: 225px;
+    max-height: 97px;
+}
+
+.about_inner_wrapper_social_icons {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 30px;
+}
+
+.about_inner_wrapper_social_icons a {
+    width: 43px;
+    height: 43px;
+    background-color: var(--bg);
+    border-radius: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: var(--fs-18);
+    color: var(--color_b);
+    transition: all .3s ease;
+}
+
+.about_inner_wrapper_social_icons a:hover {
+    background-color: var(--primary_color);
+    color: var(--color-w);
+}
+
+
+.about_wrapper_img img{
+    max-height: 687px;
+    width: 100%;
+}
+.about_wrapper_text {
+    max-width: 550px;
+    width: 100%;
+}
+
+.about_wrapper_text h3 {
+    margin-bottom: 20px;
+}
+
+.about_wrapper_text button {
+    max-width: 300px;
+    width: 100%;
+    margin-top: 20px;
+    display: inline-block;
+}
+
+
+.about_journey_wrapper img {
+    /* object-fit: cover; */
+    background-position: -10% -10%;
+}
+
+.about_journey_wrapper::before {
+    position: absolute;
+    opacity: 0;
+}
+
+.simple_wrapper_img {
+    max-height: 916px;
+    position: relative;
+}
+
+
+
+
+.simple_wrapper_img img {
+    min-height: 916px ;
+    object-fit: cover;
+}
+
+.simple_inner_wrapper {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    height: 96px;
+    /* overflow: hidden; */
+}
+
+.simple_inner_wrapper img {
+    max-width: 350px;
+    object-fit: contain;
+    height: 100px !important;
+    pointer-events: none;
+}
+
+
+.simple_laptop_img {
+    margin-left: 76px;
+}
+
+.simple_laptop_img img {
+    margin-top: 16px;
+    margin-bottom: 30px;
+    max-width: 400px;
+    max-height: 210px;
+}
+
+.simple_wrapper_btn_box button {
+    background-color: #B4402E;
+    color: white;
+}
+
+.simple_wrapper_btn_box button:hover {
+    background-color: black;
+}
+
+
+/* discography section  */
+.discography_header {
+    margin-bottom: 60px;
+}
+
+
+
+.discography_video_text h3 {
+    text-transform: var(--text-ts-capitalize);
+}
+
+.discography_video_text h4 {
+    font-size: var(--fs-24);
+    font-weight: var(--fw-600);
+    color: var(--primary_color);
+    text-transform: var(--text-ts-capitalize);
+    margin-bottom: 24px;
+
+}
