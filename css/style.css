@@ -106,6 +106,9 @@ button {
 .mb-55 {
     margin-bottom: 3.5rem;
 }
+.mb-50 {
+    margin-bottom: 3.2rem;
+}
 
 .max-w-1040 {
     max-width: 1040px;
@@ -509,3 +512,76 @@ button {
 .footer_bottom p span {
     color: var(--primary_color);
 }
+
+
+
+
+
+
+/********************************contact page***************************************************/
+.contact_header h3 {
+    letter-spacing: 8px;
+}
+.form_container {
+    max-width: 647px;
+    width: 100%;
+    margin-inline: auto;
+    padding: 35px;
+    background-color: var(--color-w);
+    border-radius: 25px;
+    box-shadow: rgba(50, 50, 93, 0.15) 0px 30px 60px -12px, rgba(0, 0, 0, 0.2) 0px 18px 36px -18px;
+}
+
+
+.input_controller {
+    max-width: 276px;
+    width: 100%;
+    margin-bottom: 25px;
+}
+
+.input_controller label {
+    font-size: var(--fs-14);
+    font-weight: var(--fw-400);
+    color: rgb(85, 89, 92);
+    margin-bottom: 8px;
+}
+
+.input_controller input {
+    width: 100%;
+    height: 48px;
+    padding: 9px;
+    border-radius: 5px;
+    border: 1px solid var(--color_b);
+}
+
+.form_textarea_container {
+    margin-bottom: 25px;
+}
+
+.form_textarea_container label {
+    font-size: var(--fs-14);
+    font-weight: var(--fw-400);
+    color: rgb(85, 89, 92);
+    margin-bottom: 8px;
+}
+
+
+.form_textarea_container textarea {
+    width: 100%;
+    min-height: 141px;
+    padding: 9px 11px;
+    border-radius: 5px;
+    border: 1px solid var(--color_b);
+}
+
+.submit_controller button {
+    width: 100%;
+    height: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: var(--text-ts-capitalize);
+}
+
+
+
